@@ -16,6 +16,7 @@ import cn.ibeans.service.UserService;
 import cn.ibeans.servicejpa.UserServiceJpa;
 import cn.ibeans.web.model.User;
 
+@SuppressWarnings("serial")
 @Controller
 @RequestMapping(value="/user")
 public class LoginController extends HttpServlet{
