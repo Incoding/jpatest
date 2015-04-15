@@ -13,6 +13,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name="i_user")
 public class User implements Serializable{
+	private static final long	serialVersionUID	= 5177699062365176136L;
 	private String id;
 	private String username;
 	private String password;
@@ -43,5 +44,9 @@ public class User implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", password="
+				+ password + "]";
+	}
 }
